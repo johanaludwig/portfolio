@@ -17,6 +17,7 @@ $(document).ready(function() {
     });
 });
 
+
 // Show associate content - Technical Skills
 function showDiv(num) {
     document.getElementById('div1').style.display='none';

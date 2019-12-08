@@ -553,7 +553,14 @@ a {
     background-color: transparent;
     text-transform: uppercase;
     margin-right: 10px;
-    margin-top: 10px
+    margin-top: 10px;
+    outline: none;
+}
+
+.skills-btn:focus {
+    color: var(--cerise);
+    border-color: var(--cerise);
+    background-color: transparent;
 }
 
 .skills-btn:hover {
@@ -1617,6 +1624,10 @@ iframe {
 
     .skills-title {
         font-size: var(--font-m);
+    }
+
+    .skills-btn {
+        font-size: 1em;
     }
 
 /************** My work section (Portfolio) ***********/
