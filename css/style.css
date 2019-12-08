@@ -1018,10 +1018,13 @@ iframe {
     margin: 0;
     text-align: center;
     padding-bottom: 20px;
-    color: var(--cornflower);
     letter-spacing: 1px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.container-contact--title a {
+    color: var(--cornflower);
 }
 
 .container-contact--subtitle, .container-contact--text {
@@ -1041,7 +1044,6 @@ iframe {
 }
 
 .header-social ul {
-    padding-top: 40px;
     padding-inline-start: 0;
     margin: 0;
 }
@@ -1061,6 +1063,9 @@ iframe {
     text-align: center;
     display: inline-block;
     margin-right: 15px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
 
 .header-social .social-icon:hover {
@@ -1068,6 +1073,7 @@ iframe {
     color: var(--white);
     border-color: var(--white);
     box-shadow: 0 1px 3px 0 var(--superlight-grey);
+    top: -10px;
 }
 
 
@@ -1678,7 +1684,7 @@ iframe {
 
 /************** Contact section **************/
     .container-contact--title {
-        font-size: var(--font-xxl);
+        font-size: var(--font-lx);
         padding-bottom: 30px;
     }
 
@@ -1691,7 +1697,6 @@ iframe {
     }
 
     .header-social ul {
-        padding-top: 40px;
         padding-inline-start: 0;
         margin: 0;
     }
