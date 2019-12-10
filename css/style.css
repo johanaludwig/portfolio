@@ -189,16 +189,17 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 90px 30px 3px 50px;
+    padding: 70px 30px 20px 50px;
     background: url(../img/hero-mobile.png) no-repeat center top;
     background-size: cover;
 }
 
 .hero-content {
-    max-width: 230px;
+    max-width: 260px;
     text-align: left; 
     padding-top: 60px; 
-    padding-bottom: 40px; 
+    padding-bottom: 20px; 
+    padding-left: 25px;
 }
 
 .hero-content--center {
@@ -221,11 +222,18 @@ a {
     letter-spacing: 1px;
 }
 
-.hero-intro {
+.hero-intro--mbl, .hero-intro--dsk {
     color: var(--turquis);
     margin: 0;
     line-height: 20px;
+}
+
+.hero-intro--mbl {
     display: inline-block;
+}
+
+.hero-intro--dsk {
+    display: none;
 }
 
 .container-angle {
@@ -757,6 +765,7 @@ a {
 
 .modal-wrap {
     padding-top: 20px;
+    text-align: center;
 }
 
 .section {
@@ -784,6 +793,7 @@ a {
 .modal-container--intro {
     padding-top: 10px;
     padding-bottom: 30px;
+    text-align: left;
 }
 
 .modal-title {
@@ -859,6 +869,7 @@ a {
     list-style-type: disc;
     color: var(--concrete);
     font-size: var(--font-m);
+    text-align: left;
 }
 
 .modal-container--list li {
@@ -1156,25 +1167,33 @@ iframe {
     }
     
     .hero-content {
-        max-width: 500px;
-        padding-left: 50px;
+        max-width: 400px;
         padding-top: 100px;
-        padding-bottom: 140px;
-    
+        padding-bottom: 80px;
     }
     
     .hero-subtitle {
         font-size: var(--font-m);
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
     
     .hero-title {
         font-size: var(--font-xxl);
         letter-spacing: 2px;
+        padding-bottom: 7px;
     }
     
-    .hero-intro, .container-contact--subtitle, .container-contact--text {
+    .hero-intro--dsk, .container-contact--subtitle, .container-contact--text {
         font-size: var(--font-l);
+    }
+
+    .hero-intro--mbl {
+        display: none;
+    }
+
+    .hero-intro--dsk {
+        display: inline-block;
+        line-height: 27px;
     }
     
     .hero-text {
@@ -1324,8 +1343,8 @@ iframe {
 
     .hero-content {
         padding-left: 80px;
-        max-width: 550px;
-        padding-bottom: 150px;
+        max-width: 470px;
+        padding-bottom: 90px;
         padding-top: 60px;
     }
 
@@ -1437,9 +1456,6 @@ iframe {
     }
 
 /**************** My work section (Portfolio) ***********************/
-    .portfolio-card {
-        max-width: 800px;
-    }
 
     iframe {
         width: 600px;
@@ -1498,11 +1514,16 @@ iframe {
 
 @media only screen and (min-width: 1300px) {
 /****************** Hero section *******************/
-   .hero-content {
+    .cover {
+        background: url(../img/hero-1300px.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    .hero-content {
         padding-left: 130px;
         max-width: 650px;
         padding-top: 60px;
-        padding-bottom: 200px;
+        padding-bottom: 90px;
     }
 
     .hero-subtitle {
@@ -1514,8 +1535,9 @@ iframe {
         font-size: 2em;
     }
 
-    .hero-intro {
+    .hero-intro--dsk {
         font-size: var(--font-lx);
+        line-height: 30px;
     }
 
 /****************** Headers **********************/
@@ -1676,10 +1698,6 @@ iframe {
         max-width: 80%;
     }
 
-    .content-wrap {
-        max-width: 50%;
-    }
-
     .passion-description {
         height: 400px;
     }
@@ -1725,9 +1743,23 @@ iframe {
 
 @media only screen and (min-width: 1600px) {
 /****************** Hero section *******************/   
+    .cover {
+        background: url(../img/hero-1600px.png) no-repeat center top;
+        background-size: cover;
+    }
+
     .hero-content {
         padding-left: 170px;
-        max-width: 850px;
+        max-width: 800px;
+    }
+
+    .hero-title {
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .hero-intro--dsk {
+        line-height: 32px;
     }
 
 /****************** Titles *******************/
@@ -1805,7 +1837,6 @@ iframe {
 
     .hero-content {
         padding-left: 150px;
-        max-width: 900px;
     }
 
     .hero-subtitle {
@@ -1817,11 +1848,9 @@ iframe {
         letter-spacing: 2.5px;
     }
 
-    .hero-text {
-        font-size: var(--font-xxl);
-        padding-top: 45px;
-        line-height: 30px;
-    } 
+    .hero-intro--dsk {
+        line-height: 34px;
+    }
 
 /****************** Titles *******************/
     .container-skills--title, .container-work--title, .container-passion--title, .container-about--title, .container-work--title {
