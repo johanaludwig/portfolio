@@ -339,6 +339,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    margin: auto;
 }
 
 .container-about--picture {
@@ -377,11 +379,14 @@ a {
 }
 
 .about-text {
-    padding: 0 0 20px;
+    padding: 0 0 10px;
     margin: auto;
     font-size: var(--font-m);
     text-align: left;
     color: var(--concrete);
+}
+.space {
+    padding-top: 35px;
 }
 
 .cta {
@@ -1188,24 +1193,13 @@ iframe {
 
 
 /************** About section ****************/
-
     .wrap-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 90%;
+        margin: auto;
     }
 
     .container-expertise, .container-passion, .container-skills, .skills-group {
         max-width: 80%;
-    }
-
-    .container-about--text {
-        max-width: 60%;
-    }
-
-    .container-passion--description{
-        padding: 0 70px;
     }
 
     .modal-container--centered, .modal-container--btn {
@@ -1293,6 +1287,10 @@ iframe {
         margin-left: 15px;
     }
 
+    .container-passion--description{
+        padding: 0 70px;
+    }
+
     .passion-description--img {
         max-width: 35%;
         padding-bottom: 10px;
@@ -1337,13 +1335,43 @@ iframe {
     }
 
 /************** About section ****************/
+    .container-about {
+        text-align: left;
+    }    
+
+    .wrap-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .about-flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-flow: row wrap;
+        max-width: 75%;
+        margin: auto;
+    }
 
     .about-subtitle, .passion-subtitle, .modal-container--text {
         font-size: var(--font-l);
     }
 
-    .container-about--text, .container-passion--description {
-        padding: 0 30px;
+    .container-about--text {
+        max-width: 70%;
+        padding-left: 10px;
+    }
+
+    .container-about--picture {
+        padding: 10px 0;
+    }
+
+    .about-text {
+        padding: 0 0 5px;
     }
 
     .btn {
@@ -1418,10 +1446,6 @@ iframe {
         height: 310px;
     }
 
-    /*.modal-container--title {
-        font-size: var(--font-l);
-    }*/
-
     .modal-gif {
         max-width: 40%;
     }
@@ -1450,6 +1474,10 @@ iframe {
 
     .passion-description {
         height: 420px;
+    }
+
+    .container-passion--description {
+        padding: 0 30px;
     }
 
     .passion-description--img {
@@ -1502,43 +1530,21 @@ iframe {
         max-width: 70%;
     } 
 
-    .container-about--text, .container-passion--description {
-        max-width: 80%;
-        margin: auto;
-    }
-
     .about-subtitle, .passion-subtitle {
         font-size: var(--font-l);
     }
 
     .wrap-about {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 20px;
-    }
-
-    .container-about--picture {
-        padding: 20px 0 20px 80px;
-    }
-
-    .modal-title {
-        font-size: var(--font-xxl);
-    }
-
-    .about-flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        flex-flow: row wrap;
-        max-width: 75%;
+        max-width: 90%;
         margin: auto;
     }
 
-    .about-flex--container {
-        max-width: 40%;
-        margin: 0;
+    .container-about--picture {
+        padding: 0;
+    }
+
+    .container-about--text {
+        padding-left: 0;
     }
 
     .about-text {
@@ -1548,13 +1554,21 @@ iframe {
         margin-left: 0;
     }
 
+    .modal-title {
+        font-size: var(--font-xxl);
+    }
+
+    .about-flex--container {
+        max-width: 40%;
+        margin: 0;
+    }
+
     .text-custom {
         margin-bottom: 10px;
     }
 
-    .about-img {
-        width: 150px;
-        height: auto;
+    .container-passion {
+        max-width: 60%;
     }
 
     .modal-container--centered, .modal-container--btn {
@@ -1668,6 +1682,12 @@ iframe {
 
     .passion-description {
         height: 400px;
+    }
+
+    .container-passion--description {
+        padding: 0 15px;
+        max-width: 80%;
+        margin: auto;
     }
 
     .passion-description--img {
