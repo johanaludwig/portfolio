@@ -314,9 +314,15 @@ a {
     grid-area: area-cero;
 }
 
-.container-about--text, .container-passion--description {
-    line-height: 28px;
-    margin: 0;
+.container-about--intro, .container-skills, .skills-group, .container-passion {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-about--intro, .container-passion {
+    padding: 40px 20px;
+    text-align: center; 
 }
 
 .about-subtitle, .passion-subtitle {
@@ -333,15 +339,15 @@ a {
     background-image: linear-gradient(to right, #152136, #1e2d47, #283a58, #31476a, #3b557c);
 }
 
-.container-about, .container-about--intro, .container-skills, .skills-group, .container-passion {
+.container-about, .container-expertise, .container-passion--wrap {
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.container-about, .container-passion {
-    padding: 40px 20px;
-    text-align: center; 
+.container-about--title, .container-skills--title {
+    color: var(--turquis);
 }
 
 .wrap-about {
@@ -363,24 +369,9 @@ a {
     box-shadow: 0px 0px 10px var(--light-grey);
 }
 
-.container-skills--title, .container-expertise--title, .container-work--title,
-.container-passion--title, .container-about--title, .container-work--title {
-    font-size: var(--font-lx);
-    font-weight: var(--font-weight--bold);
-    padding-bottom: 30px;
-    padding-top: 30px;
+.container-about--text, .container-passion--description {
+    line-height: 28px;
     margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.container-expertise--title, .container-work--title, .container-passion--title {
-    color: var(--navy);
-}
-
-.container-about--title, .container-skills--title {
-    color: var(--turquis);
 }
 
 .about-text {
@@ -389,6 +380,10 @@ a {
     font-size: var(--font-m);
     text-align: left;
     color: var(--concrete);
+}
+
+.cta {
+    padding-top: 15px;
 }
 
 .text-custom {
@@ -400,8 +395,8 @@ a {
     padding-top: 35px;
 }
 
-.cta {
-    padding-top: 15px;
+.click-to-open {
+    text-align: center;
 }
 
 .top {
@@ -479,6 +474,7 @@ a {
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .modal-about--subtitle {
@@ -535,9 +531,9 @@ a {
 }
 
 .modal-btn:hover {
-    border: 1px solid var(--turquis);
+    border: 2px solid var(--turquis);
     box-shadow: 0 2px 5px 0 var(--turquis-shadow);
-    background-color: 	rgba(255, 255, 255, 0.548);
+    background-color: rgba(0,0,0,0);
     color: var(--turquis);
 }
 
@@ -557,6 +553,11 @@ a {
 .section-w {
     background-color: var(--white);
     padding-top: 40px;
+}
+
+.modal-section {
+    max-width: 95%;
+    margin: auto;
 }
 
 .modal-flex--title {
@@ -704,11 +705,20 @@ iframe {
     grid-area: area-two;
 }
 
-.container-expertise, .container-passion--wrap {
-    padding-bottom: 50px;
+.container-skills--title, .container-expertise--title, .container-work--title,
+.container-passion--title, .container-about--title, .container-work--title {
+    font-size: var(--font-lx);
+    font-weight: var(--font-weight--bold);
+    padding-bottom: 30px;
     padding-top: 30px;
-    max-width: 85%;
-    margin: auto;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-expertise--title, .container-work--title, .container-passion--title {
+    color: var(--navy);
 }
 
 .container-expertise--content, .container-passion--content {
@@ -981,7 +991,7 @@ iframe {
     border: 1px solid #eceff8;
     border-radius: 5px;
     padding: 25px;
-    height: 430px;   
+    height: 400px;   
 }
 
 .passion-description--img {
@@ -1224,26 +1234,37 @@ iframe {
     .container-expertise, .container-about--intro, .container-passion, .container-skills, .skills-group {
         max-width: 80%;
     }
-
-    .modal-container--centered, .modal-container--btn {
-        max-width: 70%;
-        margin: auto;
-    }
-
     .container-about--intro {
         text-align: center;
     }
 
-    .text-lb {
-        font-size: var(--font-l);
+/*********************** Modals **************************/
+    
+    .modal-wrap {
+        max-width: 85%;
     }
 
-    .img-num {
-        max-width: 20%;
+    .modal-container--content {
+        max-width: 80%;
     }
 
-    .about-flex--container {
-        max-width: 55%;
+    .modal-img, .collage {
+        max-width: 90%;
+    }
+
+    .modal-section {
+        max-width: 90%;
+    }
+
+    .modal-btn--group {
+        max-width: 75%;
+        margin: auto;
+    }
+
+    .collage-wrap {
+        margin: auto;
+        max-width: 90%;
+        text-align: center;
     }
 
 
@@ -1268,22 +1289,13 @@ iframe {
         max-width: 700px;
     }
 
-    .modal-subtitle, .passion-description--title {
+    .passion-description--title {
         font-size: var(--font-m);
     }
 
     iframe {
         width: 500px;
         height: 280px;
-    }
-
-    .modal-btn--group {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        max-width: 60%;
-        margin: auto;
     }
 
 /********** Passion section **********/
@@ -1400,10 +1412,6 @@ iframe {
 
     .btn {
         padding-top: 20px;
-    }
-
-    .img-num {
-        max-width: 20%;
     }
 
     .about-flex--container {
