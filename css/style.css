@@ -333,7 +333,7 @@ a {
     background-image: linear-gradient(to right, #152136, #1e2d47, #283a58, #31476a, #3b557c);
 }
 
-.container-about, .container-skills, .skills-group, .container-passion {
+.container-about, .container-about--intro, .container-skills, .skills-group, .container-passion {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +349,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -383,10 +383,10 @@ a {
     color: var(--turquis);
 }
 
-.container-about--text {
+/*.container-about--text, .container-about--picture {
     max-width: 80%;
     margin: auto;
-}
+}*/
 
 .about-text {
     padding: 0 0 10px;
@@ -1056,13 +1056,13 @@ iframe {
 }
 
 .header-social .social-icon {
-    color: var(--cerise);
+    color: var(--cornflower);
     font-size: var(--font-lx);
     width: 40px;
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--cerise);
+    border: 1px solid var(--cornflower);
     text-align: center;
     display: inline-block;
     margin-right: 15px;
@@ -1174,7 +1174,7 @@ iframe {
         padding-bottom: 15px;
     }
     
-    .hero-intro--dsk, .hero-intro--mbl, .container-contact--subtitle, .container-contact--text {
+   .container-contact--subtitle, .container-contact--text {
         font-size: var(--font-l);
     }
 
@@ -1196,17 +1196,21 @@ iframe {
 
 /************** About section ****************/
     .wrap-about {
-        max-width: 90%;
+        max-width: 75%;
         margin: auto;
     }
 
-    .container-expertise, .container-passion, .container-skills, .skills-group {
+    .container-expertise, .container-about--intro, .container-passion, .container-skills, .skills-group {
         max-width: 80%;
     }
 
     .modal-container--centered, .modal-container--btn {
         max-width: 70%;
         margin: auto;
+    }
+
+    .container-about--intro {
+        text-align: center;
     }
 
     .text-lb {
@@ -1287,6 +1291,7 @@ iframe {
     .passion-description {
         margin-right: 15px;
         margin-left: 15px;
+        height: 410px;
     }
 
     .container-passion--description{
@@ -1294,7 +1299,7 @@ iframe {
     }
 
     .passion-description--img {
-        max-width: 35%;
+        max-width: 30%;
         padding-bottom: 10px;
     }
 
@@ -1342,17 +1347,29 @@ iframe {
     }
 
 /************** About section ****************/
-    .container-about {
-        text-align: left;
-    }    
+      
 
     .wrap-about {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        max-width: 80%;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: flex-start;
+        max-width: 90%;
         margin: auto;
+        padding-top: 20px;
+    }
+
+    .container-about--picture {
+        padding: 0;
+    }
+
+    .about-text {
+        padding: 0 0 5px;
+    }
+
+    .space {
+        padding-top: 40px;
     }
 
     .about-flex {
@@ -1369,16 +1386,7 @@ iframe {
     }
 
     .container-about--text {
-        max-width: 70%;
-        padding-left: 10px;
-    }
-
-    .container-about--picture {
-        padding: 10px 0;
-    }
-
-    .about-text {
-        padding: 0 0 5px;
+        max-width: 55%;
     }
 
     .btn {
@@ -1421,6 +1429,10 @@ iframe {
         justify-content: space-around;
     }
 
+    .container-expertise {
+        max-width: 85%;
+    }
+
     .container-expertise--content {
         padding-left: 100px;
     }
@@ -1449,10 +1461,6 @@ iframe {
     .modal-gif {
         max-width: 40%;
     }
-
-    .down {
-        padding-bottom: 50px;
-    }
     
     .left {
         padding-left: 90px;
@@ -1465,7 +1473,7 @@ iframe {
 /**************** Passion section ********************/
 
     .container-passion {
-        max-width: 60%;
+        max-width: 80%;
     }
 
     .content-wrap {
@@ -1521,6 +1529,10 @@ iframe {
         line-height: 30px;
     }
 
+    .hero-intro--mbl, .hero-intro--dsk {
+        font-size: var(--font-l);
+    }
+
 /****************** Headers **********************/
 
 .container-skills--title, .container-expertise--title, .container-work--title, .container-passion--title, .container-about--title, .container-work--title {
@@ -1529,7 +1541,7 @@ iframe {
 
 /******************* About section *********************/
 
-    .container-about {
+    .container-about, .container-about--intro {
         max-width: 70%;
     } 
 
@@ -1538,16 +1550,20 @@ iframe {
     }
 
     .wrap-about {
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
     }
 
     .container-about--picture {
-        padding: 0;
+        padding: 10px 0 0 0;
     }
 
     .container-about--text {
         padding-left: 0;
+    }
+
+    .click-to-open {
+        text-align: end;
     }
 
     .about-text {
