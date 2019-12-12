@@ -26,11 +26,11 @@
     --font-weight--ultra-bold: 900;
 
     /* Font Sizes */
-    --font-s: 0.875em;
-    --font-m: 1.125em;
-    --font-l: 1.25em;
-    --font-lx: 1.5625em;
-    --font-xxl: 1.875em;
+    --font-s: 14px;
+    --font-m: 18px;
+    --font-l: 20px;
+    --font-lx: 25px;
+    --font-xxl: 30px;
 }
 
 /**************** Basic Styles *****************/
@@ -454,17 +454,11 @@ a {
 
 .modal-wrap {
     padding-top: 40px;
-    max-width: 90%;
-    margin: auto;
+    margin: 0;
 }
 
-.modal-container--content {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    max-width: 85%;
+.modal-container--content, .modal-container--varied {
+    max-width: 80%;
     margin: auto;
 }
 
@@ -485,6 +479,10 @@ a {
     margin: 0;
     padding-top: 15px;
     padding-bottom: 7px;
+}
+
+.block {
+    padding-top: 20px;
 }
 
 .modal-btn--group {
@@ -552,7 +550,6 @@ a {
 
 .section-w {
     background-color: var(--white);
-    padding-top: 40px;
 }
 
 .modal-section {
@@ -587,7 +584,7 @@ a {
 }
 
 .modal-flex--content {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -603,7 +600,9 @@ a {
     margin: auto;
 }
 
-
+.modal-img {
+    padding: 20px 0;
+}
 
 
 
@@ -1239,25 +1238,17 @@ iframe {
     }
 
 /*********************** Modals **************************/
-    
-    .modal-wrap {
-        max-width: 85%;
-    }
 
-    .modal-container--content {
-        max-width: 80%;
+    .modal-container--content, .modal-container--varied {
+        max-width: 70%;
     }
 
     .modal-img, .collage {
-        max-width: 90%;
-    }
-
-    .modal-section {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .modal-btn--group {
-        max-width: 75%;
+        max-width: 70%;
         margin: auto;
     }
 
@@ -1368,7 +1359,6 @@ iframe {
     }
 
 /************** About section ****************/
-      
 
     .wrap-about {
         display: flex;
@@ -1385,6 +1375,10 @@ iframe {
         padding: 0;
     }
 
+    .container-about--text {
+        max-width: 55%;
+    }
+
     .about-text {
         padding: 0 0 5px;
     }
@@ -1393,44 +1387,26 @@ iframe {
         padding-top: 40px;
     }
 
-    .about-flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        flex-flow: row wrap;
-        max-width: 75%;
-        margin: auto;
-    }
-
     .about-subtitle, .passion-subtitle, .modal-container--text {
         font-size: var(--font-l);
     }
 
-    .container-about--text {
+/************************* Modal ***************************/
+    .modal-container--content, .modal-container--varied {
+        max-width: 60%;
+    }
+
+    .modal-img, .collage {
+        max-width: 80%;
+    }
+
+    .modal-btn--group {
         max-width: 55%;
     }
 
-    .btn {
-        padding-top: 20px;
+    .modal-section {
+        max-width: 85%;
     }
-
-    .about-flex--container {
-        max-width: 45%;
-    }
-
-    .modal-container--centered, .modal-container--btn {
-        max-width: 65%;
-        margin: auto;
-    }
-
-    .modal-img--d {
-        max-width: 70%;
-    }
-
-    .collage-img {
-        max-width: 75%;
-    }
-
 
 /************************** Expertise section *********************/
 
@@ -1479,10 +1455,6 @@ iframe {
         padding-left: 90px;
     }
 
-    .modal-btn--group {
-        max-width: 47%;
-    }
-
 /**************** Passion section ********************/
 
     .container-passion {
@@ -1526,7 +1498,7 @@ iframe {
 
     .hero-content {
         padding-left: 130px;
-        max-width: 600px;
+        max-width: 670px;
     }
 
     .hero-subtitle {
@@ -1562,6 +1534,11 @@ iframe {
         font-size: var(--font-l);
     }
 
+    .about-subtitle {
+        max-width: 80%;
+        margin: auto;
+    }
+
     .wrap-about {
         max-width: 100%;
         margin: auto;
@@ -1586,34 +1563,56 @@ iframe {
         margin-left: 0;
     }
 
-    .modal-title {
-        font-size: var(--font-xxl);
-    }
-
-    .about-flex--container {
-        max-width: 40%;
-        margin: 0;
-    }
-
     .text-custom {
         margin-bottom: 10px;
     }
 
-    .container-passion {
-        max-width: 60%;
+    .collage-wrap {
+        max-width: 100%;
     }
 
-    .modal-container--centered, .modal-container--btn {
-        max-width: 60%;
-        margin: auto;
+    .collage {
+        max-width: 45%;
     }
 
-    .collage-img {
-        max-width: 60%;
+/**************************** Modal *************************************/
+    
+    .modal-title {
+        font-size: var(--font-xxl);
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .modal-img {
-        max-width: 80%;
+    .modal-btn--group {
+        max-width: 40%;
+    }
+
+    .modal-about--subtitle {
+        font-size: var(--font-l);
+    }
+
+    .modal-img{
+        max-width: 70%;
+        padding-top: 30px;
+    }
+
+    .modal-container--varied {
+        max-width: 95%;
+    }
+
+    .modal-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .modal-flex--container {
+        max-width: 50%;
+    }
+
+    .lft {
+        padding-left: 40px;
     }
 
 /************************ Expertise section *******************/ 
@@ -1690,11 +1689,10 @@ iframe {
         height: 410px;
     }
 
-    .modal-btn--group {
-        max-width: 35%;
-    }
-
 /********** Passion section **********/
+    .container-passion {
+        max-width: 60%;
+    }
 
     .container-passion--content {
         max-width: 80%;
@@ -1752,7 +1750,7 @@ iframe {
 
     .hero-content {
         padding-left: 170px;
-        max-width: 800px;
+        max-width: 750px;
     }
 
     .hero-title {
@@ -1772,8 +1770,22 @@ iframe {
     
 /************** About section ****************/
 
-    .about-text {
+    .about-subtitle {
+        max-width: 60%;
+    }
+
+/**************** Modals *****************************/
+
+    .modal-container--content {
+        max-width: 50%;
+    }
+
+    .modal-container--varied {
         max-width: 80%;
+    }
+
+    .modal-btn--group {
+        max-width: 35%;
     }
 
 /**************** Expertise section ******************/
@@ -1791,32 +1803,21 @@ iframe {
         margin-bottom: 60px;
     }
 
-    .modal-container--centered, .modal-container--btn {
-        max-width: 40%;
-    }
-
-    .modal-img--d {
-        max-width: 50%;
-    }
-
-    .collage-img {
-        max-width: 55%;
-    }
-
-    .modal-btn--group {
-        max-width: 30%;
-    }
-
-    .modal-gif {
-        max-width: 20%;
-    }
 /********** Passion section **********/
     .container-passion--content {
-        max-width: 80%;
+        max-width: 70%;
     }
 
     .passion-description--text {
         padding-top: 15px;
+    }
+
+    .passion-description--img {
+        max-width: 25%;
+    }
+
+    .passion-description {
+        height: 380px;
     }
    
 }
@@ -1861,21 +1862,20 @@ iframe {
         max-width: 60%;
     }
 
-    .profile-picture {
-        width: 170px;
+    .container-about--text, .container-passion--description {
+        max-width: 65%;
     }
 
-    .container-passion--description {
-        padding: 30px;
+    .profile-picture {
+        width: 170px;
     }
 
     .about-text {
         font-size: var(--font-l);
         line-height: 27px;
-        max-width: 93%;
     }
 
-    .collage-img {
+    .collage {
         max-width: 40%;
     }
 
@@ -1883,12 +1883,18 @@ iframe {
         padding: 0;
     }
 
-    .cta-link {
-        padding-left: 10px;
-    }
-
     .text-custom {
         margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+/************************* Modals *****************************/
+    .modal-container--content {
+        max-width: 40%;
+    }
+
+    .modal-btn--group {
+        max-width: 30%;
     }
 
 /************************ Expertise section *******************/
@@ -1911,29 +1917,13 @@ iframe {
         width: 70%;
     }
 
-    .modal-container--centered, .modal-container--btn {
-        max-width: 35%;
-    }
-
-    .modal-img--d {
-        max-width: 40%;
-    }
-
-    .modal-gif {
-        max-width: 15%;
-    }
-
-    .modal-img {
-        max-width: 80%;
-    }
-
-    .modal-btn--group {
-        max-width: 23%;
-    }
-
 /******************* Passion section *****************/
     .container-passion--content {
         max-width: 60%;
+    }
+
+    .container-passion--description {
+        padding: 30px;
     }
 
     .container-passion {
@@ -1957,7 +1947,5 @@ iframe {
         height: 400px;
     }
 
-    .container-about--text, .container-passion--description {
-        max-width: 65%;
-    }
+    
 }
