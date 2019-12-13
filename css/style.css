@@ -463,12 +463,18 @@ a {
 }
 
 .modal-title {
-    font-size: var(--font-lx);
+    font-size: var(--font-l);
     color: var(--cornflower);
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
+}
+
+.modal-subtitle {
+    color: var(--superlight-grey);
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .modal-about--subtitle {
@@ -552,6 +558,10 @@ a {
     background-color: var(--white);
 }
 
+.section-b {
+    background-color: var(--light-background);
+}
+
 .modal-section {
     max-width: 95%;
     margin: auto;
@@ -588,14 +598,14 @@ a {
     margin: auto;
 }
 
-.modal-flex--text, .expertise-text {
+.modal-flex--text, .expertise-text, .modal-container--list {
     padding-top: 5px;
     margin: 0;
     font-size: var(--font-m);
     text-align: left;
 }
 
-.modal-img, .collage {
+.modal-img, .img, .collage {
     max-width: 100%;
     margin: auto;
 }
@@ -604,17 +614,38 @@ a {
     padding: 20px 0;
 }
 
-
-
-
-
-
-.modal-subtitle {
-    color: var(--superlight-grey);
-    font-style: italic;
+.modal-container--list {
+    list-style-type: disc;
     margin: 0;
-    letter-spacing: 1px;
 }
+
+.modal-container--list li {
+    padding-top: 10px;
+}
+
+.last {
+    padding-top: 45px;
+    padding-bottom: 10px;
+    font-size: var(--font-m);
+    font-weight: var(--font-weight--ultra-bold);
+    text-transform: uppercase;
+    color: var(--turquis);
+}
+
+iframe {
+    max-width: 100%;
+    margin: auto;
+}
+
+.text-w {
+    color: var(--concrete);
+}
+
+
+
+
+
+
 
  .modal-img-custom, .modal-img--d {
     max-width: 100%;
@@ -658,37 +689,10 @@ a {
     text-align: left;
 }
 
-.text-w {
-    color: var(--concrete);
-}
+
 
 .text-lb {
     color: var(--cornflower);
-}
-
-.modal-container--list {
-    list-style-type: disc;
-    color: var(--concrete);
-    font-size: var(--font-m);
-    text-align: left;
-}
-
-.modal-container--list li {
-    padding-top: 10px;
-}
-
-.last {
-    padding-top: 45px;
-    padding-bottom: 10px;
-    font-size: var(--font-m);
-    font-weight: var(--font-weight--ultra-bold);
-    text-transform: uppercase;
-    color: var(--turquis);
-}
-
-iframe {
-    max-width: 100%;
-    margin: auto;
 }
 
 .modal-detail {
