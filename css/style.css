@@ -531,7 +531,7 @@ a {
 }
 
 .modal-btn--wbck {
-    box-shadow: 0 2px 5px 0 #fac3e6;
+    box-shadow: 0 2px 5px 0 var(--cerise);
 }
 
 .modal-btn:hover {
@@ -641,67 +641,10 @@ iframe {
     color: var(--concrete);
 }
 
-
-
-
-
-
-
- .modal-img-custom, .modal-img--d {
-    max-width: 100%;
-    height: auto;
-    padding-top: 30px;
-}
-
-.modal-img-custom {
-    padding-bottom: 30px
-}
-
-.modal-gif {
-    max-width: 60%;
-    height: auto;
-    padding-top: 30px
-}
-
-.modal-container--gif {
-    text-align: center;
-}
-
-.modal-container--title {
-    padding-top: 40px;
-    color: var(--cornflower);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: var(--font-l);
-    padding-bottom: 5px;   
-}
-
-.title-custom {
-    color: var(--turquis);
-    padding-bottom: 10px;
-}
-
-.modal-container--text {
-    padding-top: 10px;
-    color: var(--navy);
-    line-height: 23px;
-    font-size: 18px;
-    text-align: left;
-}
-
-
-
-.text-lb {
-    color: var(--cornflower);
-}
-
 .modal-detail {
-    color: var(--lavender);
+    color: var(--cornflower);
 }
 
-.modal-container--title, .modal-container--text, .modal-container--list {
-    margin:0;
-}
 
 /************** Expertise section ****************/
 .area-two {
