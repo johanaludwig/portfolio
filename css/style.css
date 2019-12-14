@@ -610,6 +610,11 @@ a {
     margin: auto;
 }
 
+.gif {
+    max-width: 70%;
+    margin: auto;
+}
+
 .modal-img {
     padding: 20px 0;
 }
