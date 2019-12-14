@@ -375,7 +375,6 @@ a {
 }
 
 .about-text {
-    padding: 0 0 10px;
     margin: auto;
     font-size: var(--font-m);
     text-align: left;
@@ -472,7 +471,6 @@ a {
 
 .modal-subtitle {
     color: var(--superlight-grey);
-    font-style: italic;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -483,8 +481,8 @@ a {
     letter-spacing: 1px;
     text-align: left;
     margin: 0;
-    padding-top: 15px;
-    padding-bottom: 7px;
+    padding-top: 25px;
+    padding-bottom: 3px;
 }
 
 .block {
@@ -598,7 +596,7 @@ a {
     margin: auto;
 }
 
-.modal-flex--text, .expertise-text, .modal-container--list {
+.modal-flex--text, .modal-container--list {
     padding-top: 5px;
     margin: 0;
     font-size: var(--font-m);
@@ -672,7 +670,7 @@ iframe {
     color: var(--navy);
 }
 
-.container-expertise--content, .container-passion--content {
+.container-expertise--content, .container-passion--content, .sec {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -693,7 +691,6 @@ iframe {
 }
 
 .expertise-text {
-    padding-top: 5px;
     margin: 0;
     font-size: var(--font-m);
     text-align: left;
@@ -1195,7 +1192,11 @@ iframe {
         max-width: 70%;
     }
 
-    .modal-img, .collage {
+    .modal-about--subtitle {
+        font-size: var(--font-m);
+    }
+
+    .modal-img {
         max-width: 80%;
     }
 
@@ -1210,6 +1211,9 @@ iframe {
         text-align: center;
     }
 
+    .gif {
+        max-width: 60%;
+    }
 
 /******************** Skills section **********************/
 
@@ -1331,10 +1335,6 @@ iframe {
         max-width: 55%;
     }
 
-    .about-text {
-        padding: 0 0 5px;
-    }
-
     .space {
         padding-top: 40px;
     }
@@ -1348,7 +1348,7 @@ iframe {
         max-width: 60%;
     }
 
-    .modal-img, .collage {
+    .modal-img {
         max-width: 80%;
     }
 
@@ -1362,7 +1362,7 @@ iframe {
 
 /************************** Expertise section *********************/
 
-    .container-expertise {
+    .container-expertise, .flex {
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -1510,7 +1510,6 @@ iframe {
 
     .about-text {
         text-align: left;
-        padding: 0;
         max-width: 100%;
         margin-left: 0;
     }
@@ -1541,6 +1540,7 @@ iframe {
 
     .modal-about--subtitle {
         font-size: var(--font-l);
+        padding-bottom: 5px;
     }
 
     .modal-img{
@@ -1567,6 +1567,14 @@ iframe {
         padding-left: 40px;
     }
 
+    .section {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .gif {
+        max-width: 40%;
+    }
 /************************ Expertise section *******************/ 
 
     .expertise-title {
