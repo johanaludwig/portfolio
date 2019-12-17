@@ -1542,6 +1542,10 @@ iframe {
         padding-bottom: 5px;
     }
 
+    .modal-flex--container {
+        padding-top: 80px;
+    }
+
     .modal-img{
         max-width: 70%;
         padding-top: 30px;
@@ -1563,7 +1567,7 @@ iframe {
     }
 
     .lft {
-        padding-left: 40px;
+        padding-left: 50px;
     }
 
     .gif {
