@@ -116,7 +116,7 @@
                                     <p class="modal-about--subtitle">Keep scrolling, if you want to discover my
                                         #FunFacts!</p>
                                 </div>
-                                <div class="modal-container--btn">
+                                <div class="modal-container--btn down">
                                     <a class="modal-btn--custom" href="img/Lebenslauf_Johana-Ludwig_2019.pdf" target="_blank">View Resume</a>
                                 </div>
                             </div>
@@ -211,10 +211,10 @@
                                         </div>
                                     </div>
                                     <div class="modal-section top">
-                                        <p class="modal-about--subtitle">Are you ready to learn more about my technical skills or work experience?</p>
+                                        <p class="modal-about--custom">Are you ready to learn more about my technical skills or work experience?</p>
                                     </div>
                                 </div>
-                                <div class="modal-btn--group">
+                                <div class="down">
                                     <div class="modal-container--btn">
                                         <a class="modal-btn--wbck" href="img/Lebenslauf_Johana-Ludwig_2019.pdf" target="_blank">View Resume</a>
                                     </div>
@@ -222,6 +222,7 @@
                                         <a class="modal-btn" href="#expertise" target="_blank">View my Expertise</a>
                                     </div>
                                 </div>
+                                <a href="#" class="back-to-top--modal"><i class="lni-chevron-up"></i></a>
                                 <div class="collage-wrap">
                                     <img src="img/about-me/collage-1.png" alt="Photo collage of me" class="collage">
                                     <img src="img/about-me/collage-2.png" alt="Photo collage of me" class="collage">
@@ -656,6 +657,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="top">
+                                <a href="#work" class="sample go-home">Back to the projects</a>
+                            </div>
                         </div>
                     </div>
                     <!------------ card sprint design --------------------->
@@ -729,8 +733,11 @@
                                     <div class="ctr">
                                          <a class="modal-btn"
                                         href="https://medium.com/@johanaludwig/design-sprint-how-to-make-learning-a-memorable-experience-586109443e53"
-                                        target="_blank">View the results of the sprint</a>
+                                        target="_blank">View the Case Study</a>
                                     </div>
+                                </div>
+                                <div class="top">
+                                    <a href="#work" class="sample go-home">Back to the projects</a>
                                 </div>
                             </div>
                         </div>
@@ -776,12 +783,14 @@
                                     <div class="modal-container--content down">
                                         <div class="down">
                                             <h4 class="modal-about--subtitle">How does it work?</h4>
-                                            <p class="expertise-text">Download the Chrono24 app</p>
-                                            <p class="expertise-text">Download the PDF file with the instructions.</p>
-                                            <p class="expertise-text">Cut out the bracelet below along the dotted line.</p>
-                                            <p class="expertise-text">Put the bracelet on your wrist.</p>
-                                            <p class="expertise-text">Open the Virtual Showroom in the Chrono24 app and select a model.</p>
-                                            <p class="expertise-text">Move the camera to see the watch from different angles including the band and clasp.</p>
+                                            <ul class="modal-container--list down">
+                                                <li>Download the Chrono24 app</li>
+                                                <li>Download the PDF file with the instructions</li>
+                                                <li>Cut out the bracelet below along the dotted line</li>
+                                                <li>Put the bracelet on your wrist</li>
+                                                <li>Open the Virtual Showroom in the Chrono24 app and select a model</li>
+                                                <li>Move the camera to see the watch from different angles including the band and clasp</li>
+                                            </ul>
                                             <p class="expertise-text">You can see watches on your wrist or on a flat surface where they can be flipped over to look at the back.</p>
                                         </div>
                                         <div class="ctr">
@@ -799,7 +808,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--timeline, team, role-->
+                            <!--timeline, team-->
                             <div class="section-w">
                                 <div class="modal-wrap">
                                     <div class="modal-container--content">
@@ -814,32 +823,40 @@
                                         <div class="down ctr">
                                             <img src="img/chrono24/c24-team.png" alt="chrono24 team" class="img">
                                         </div>
-                                        <div>
-                                            <h4 class="modal-about--subtitle">My Role</h4>
-                                            <p class="expertise-text">As the localization team coordinator, I kept the eight international team members organized and focused on the project and goals at hand.</p>
-                                            <ul class="modal-container--list">
-                                                <li>Took part early in the project to ensure the cultural context</li>
-                                                <li>Communicated with the product manager to align with the project requirements and the quality standards</li>
-                                                <li>Identified and fixed linguistic and cultural issues before launch</li>
-                                                <li>Thoroughly QA all localized content to ensure consistent messaging and proper functionality</li>
-                                                <li>Coordinated creation and maintenance of linguistic assets</li>
-                                                <li>Close collaboration with the UX writers</li>
-                                            </ul>
-                                        </div>
-                                        <div class="last">
-                                            <p>Play the clip and discover more!</p>
-                                        </div>
-                                        <div class="ctr down">
-                                            <iframe class="modal-video" width="400" height="225"
-                                            src="https://www.youtube.com/embed/LF2jtRRYt7M" frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                        </div>
-                                        <div class="ctr down">
-                                            <a class="modal-btn" href="https://apps.apple.com/mz/app/chrono24/id472912032"
-                                            target="_blank">Download the App</a>
-                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <!--role, video-->
+                            <div class="modal-wrap">
+                                <div class="modal-container--content">
+                                    <div>
+                                        <h4 class="modal-about--subtitle">My Role</h4>
+                                        <p class="about-text">As the localization team coordinator, I kept the eight international team members organized and focused on the project and goals at hand.</p>
+                                        <ul class="modal-container--list text-w">
+                                            <li>Took part early in the project to ensure the cultural context</li>
+                                            <li>Communicated with the product manager to align with the project requirements and the quality standards</li>
+                                            <li>Identified and fixed linguistic and cultural issues before launch</li>
+                                            <li>Thoroughly QA all localized content to ensure consistent messaging and proper functionality</li>
+                                            <li>Coordinated creation and maintenance of linguistic assets</li>
+                                            <li>Close collaboration with the UX writers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="last">
+                                        <p>Play the clip and discover more!</p>
+                                    </div>
+                                    <div class="ctr down">
+                                        <iframe class="modal-video" width="400" height="225"
+                                        src="https://www.youtube.com/embed/LF2jtRRYt7M" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    </div>
+                                    <div class="ctr down">
+                                        <a class="modal-btn" href="https://apps.apple.com/mz/app/chrono24/id472912032"
+                                        target="_blank">Download the App</a>
+                                    </div>
+                                </div>
+                                <div class="top">
+                                    <a href="#work" class="sample go-home">Back to the projects</a>
                                 </div>
                             </div>
                         </div>
@@ -908,6 +925,9 @@
                                      <div class="modal-container--btn">
                                          <a class="modal-btn" href="https://github.com/johanaludwig/web-dashboard" target="_blank">See Github</a>
                                     </div>
+                                </div>
+                                <div>
+                                    <a href="#work" class="sample go-home">Back to the projects</a>
                                 </div>
                                 <div>
                                     <img src="img/dashboard/dashboard-portada.jpg" alt="Dashboard web photo" class="img">

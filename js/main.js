@@ -22,6 +22,10 @@ $(".modal").click(function(ev){
     $('.modal').hide();
   });
 
+$(".sample").click(function(){
+    $('.modal').hide()
+});
+
 
 // Show associate content - Technical Skills
 function showDiv(num) {
