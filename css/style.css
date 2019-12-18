@@ -426,8 +426,8 @@ a {
     background-image: linear-gradient(to right, #152136, #1e2d47, #283a58, #31476a, #3b557c);
     margin: 10% auto;
     border-radius: 5px;
-    /*width: 95%;
-    height: 100%;*/
+    width: 95%;
+    /*height: 100%;*/
     overflow-y: scroll;
 }
   
