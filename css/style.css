@@ -211,7 +211,7 @@ a {
 }
 
 .hero-title {
-    font-size: var(--font-lx);
+    font-size: var(--font-l);
     text-transform: uppercase;
     padding-bottom: 10px;
     margin: 0;
@@ -426,8 +426,8 @@ a {
     background-image: linear-gradient(to right, #152136, #1e2d47, #283a58, #31476a, #3b557c);
     margin: 10% auto;
     border-radius: 5px;
-    /*width: 95%;
-    height: 100%;*/
+    width: 95%;
+    /*height: 100%;*/
     overflow-y: scroll;
 }
   
@@ -437,7 +437,7 @@ a {
     float: right;
     font-size: var(--font-xxl);
     font-weight: var(--font-weight--bold);
-    padding-right: 15px;
+    padding-right: 20px;
     padding-top: 5px;
 }
   
@@ -449,7 +449,7 @@ a {
 }
 
 .modal-wrap {
-    padding-top: 15px;
+    padding-top: 25px;
     margin: 0;
 }
 
@@ -472,14 +472,22 @@ a {
     letter-spacing: 1px;
 }
 
-.modal-about--subtitle {
-    color: var(--cornflower);
+.modal-about--subtitle, .modal-about--custom {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: left;
     margin: 0;
+    padding-bottom: 5px;
+}
+
+.modal-about--subtitle {
+    color: var(--cornflower);
     padding-top: 25px;
-    padding-bottom: 3px;
+}
+
+.modal-about--custom {
+    color: var(--lavender);
+    font-size: var(--font-m);
 }
 
 .block {
@@ -491,11 +499,11 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 60px;
 }
 
 .modal-container--btn {
     padding-top: 40px;
-    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -645,6 +653,14 @@ iframe {
     color: var(--cornflower);
 }
 
+.go-home {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: var(--grey);
+    text-decoration: underline;
+    float: right;
+}
 
 /************** Expertise section ****************/
 .area-two {
@@ -1101,6 +1117,7 @@ iframe {
     background-color: var(--turquis);
 }
 
+
 /************************************************************************************************/
 /************************************* MEDIA QUERIES ********************************************/
 /************************************************************************************************/
@@ -1191,6 +1208,7 @@ iframe {
 
     .modal-about--subtitle {
         font-size: var(--font-m);
+        padding-bottom: 3px;
     }
 
     .modal-img {
@@ -1210,6 +1228,10 @@ iframe {
 
     .gif {
         max-width: 60%;
+    }
+
+    .go-home {
+        display: none;
     }
 
 /******************** Skills section **********************/

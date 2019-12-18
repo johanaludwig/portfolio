@@ -17,6 +17,15 @@ $(document).ready(function() {
     });
 });
 
+$(".modal").click(function(ev){
+    if(ev.target != this) return;
+    $('.modal').hide();
+  });
+
+$(".sample").click(function(){
+    $('.modal').hide()
+});
+
 
 // Show associate content - Technical Skills
 function showDiv(num) {
