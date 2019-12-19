@@ -1211,11 +1211,18 @@ iframe {
         padding-bottom: 3px;
     }
 
+    .modal-btn--aboutGroup {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
     .modal-img {
         max-width: 80%;
     }
 
-    .modal-btn--group {
+    .modal-btn--group, .modal-btn--aboutGroup {
         max-width: 70%;
         margin: auto;
     }
@@ -1371,7 +1378,7 @@ iframe {
         max-width: 80%;
     }
 
-    .modal-btn--group {
+    .modal-btn--group, .modal-btn--aboutGroup {
         max-width: 55%;
     }
 
@@ -1555,7 +1562,7 @@ iframe {
         padding-top: 40px;
     }
 
-    .modal-btn--group {
+    .modal-btn--group, .modal-btn--aboutGroup {
         max-width: 40%;
     }
 
@@ -1752,7 +1759,7 @@ iframe {
         max-width: 80%;
     }
 
-    .modal-btn--group {
+    .modal-btn--group, .modal-btn--aboutGroup {
         max-width: 35%;
     }
 
@@ -1861,7 +1868,7 @@ iframe {
         max-width: 40%;
     }
 
-    .modal-btn--group {
+    .modal-btn--group, .modal-btn--aboutGroup {
         max-width: 30%;
     }
 
