@@ -611,11 +611,13 @@ a {
 .modal-img, .img, .collage {
     max-width: 100%;
     margin: auto;
+    outline: none;
 }
 
 .gif {
     max-width: 70%;
     margin: auto;
+    outline: none;
 }
 
 .modal-img {
