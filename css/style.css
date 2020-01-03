@@ -751,6 +751,13 @@ iframe {
     justify-content: center;
 }
 
+.skills-text {
+    color: var(--grey);
+    text-align: center;
+    font-size: var(--font-m);
+    margin: 0;
+}
+
 .skills-btn {
     border: 1px solid var(--grey);
     color: var(--grey);
