@@ -214,6 +214,7 @@ a {
     font-size: var(--font-l);
     text-transform: uppercase;
     padding-bottom: 10px;
+    padding-top: 7px;
     margin: 0;
     color: var(--concrete);
     letter-spacing: 1px;
@@ -222,7 +223,7 @@ a {
 .hero-intro--mbl, .hero-intro--dsk {
     margin: 0;
     line-height: 20px;
-    line-height: 22px;
+    line-height: 24px;
     font-size: var(--font-m);
 }
 
@@ -329,6 +330,7 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--lavender);
+    line-height: 32px;
 }
 
 .area-one{
@@ -749,6 +751,13 @@ iframe {
     justify-content: center;
 }
 
+.skills-text {
+    color: var(--grey);
+    text-align: center;
+    font-size: var(--font-m);
+    margin: 0;
+}
+
 .skills-btn {
     border: 1px solid var(--grey);
     color: var(--grey);
@@ -1160,7 +1169,6 @@ iframe {
     
     .hero-subtitle {
         font-size: var(--font-m);
-        padding-bottom: 25px;
     }
     
     .hero-title {
@@ -1333,7 +1341,6 @@ iframe {
     }
 
     .hero-title {
-        padding-bottom: 15px;
         letter-spacing: 3px;
     }
 
@@ -1483,7 +1490,6 @@ iframe {
 
     .hero-subtitle {
         font-size: var(--font-lx);
-        padding-bottom: 45px;
     }
 
     .hero-title {
@@ -1540,10 +1546,6 @@ iframe {
         text-align: left;
         max-width: 100%;
         margin-left: 0;
-    }
-
-    .text-custom {
-        margin-bottom: 10px;
     }
 
     .collage-wrap {
@@ -1822,6 +1824,10 @@ iframe {
     }
 
     .hero-intro--dsk {
+        line-height: 30px;
+    }
+
+    .hero-intro--mbl {
         line-height: 30px;
     }
 
