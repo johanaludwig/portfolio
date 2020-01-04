@@ -1090,6 +1090,8 @@ select {
     border: 1px solid #CCC;
     height: 34px;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: url(../img/icons/arrow-down.svg) 85% / 20% no-repeat;
     font-size: 14px;
     font-family: var(--font-family--primary);
@@ -1108,6 +1110,8 @@ select:checked {
     border: 1px solid #CCC;
     height: 34px;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: url(../img/icons/arrow-down.svg) 85% / 20% no-repeat;
     font-size: 14px;
     font-family: var(--font-family--primary);
