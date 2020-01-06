@@ -401,6 +401,10 @@ a {
     padding-top: 20px;
 }
 
+.tope {
+    padding-top: 70px;
+}
+
 .down {
     padding-bottom: 40px;
 }
@@ -1535,8 +1539,8 @@ select:checked {
     }
 
     .hero-content {
-        padding-left: 130px;
-        max-width: 670px;
+        padding-left: 110px;
+        max-width: 730px;
     }
 
     .hero-subtitle {
@@ -1624,6 +1628,10 @@ select:checked {
     .modal-about--subtitle {
         font-size: var(--font-l);
         padding-bottom: 5px;
+    }
+
+    .modal-subtitle {
+        font-size: var(--font-m);
     }
 
     .modal-flex--container {
