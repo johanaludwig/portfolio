@@ -413,6 +413,12 @@ a {
     text-align: center;
 }
 
+.about-custom {
+    font-style: italic;
+    color: var(--concrete);
+    margin: 0;
+}
+
 /************************** MODALS *************************************/
 .modal {
     display: none; /* Hidden by default */
@@ -1591,10 +1597,6 @@ select:checked {
 
     .container-about--text {
         padding-left: 0;
-    }
-
-    .click-to-open {
-        text-align: end;
     }
 
     .about-text {
