@@ -402,7 +402,7 @@ a {
 }
 
 .tope {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .down {
@@ -415,7 +415,7 @@ a {
 
 .about-custom {
     font-style: italic;
-    color: var(--concrete);
+    color: var(--grey);
     margin: 0;
 }
 
@@ -785,8 +785,8 @@ iframe {
 }
 
 .skills-btn:focus {
-    color: var(--cerise);
-    border-color: var(--cerise);
+    color: var(--turquis);
+    border-color: var(--turquis);
     background-color: transparent;
 }
 
